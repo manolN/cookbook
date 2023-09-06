@@ -12,6 +12,7 @@ export function setupCreate(section, navigation) {
     return showCreate;
 
     function showCreate() {
+        section.querySelector('form').reset();
         return section;
     }
 
