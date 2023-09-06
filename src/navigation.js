@@ -37,7 +37,7 @@ export function createNavigation(main, nav) {
    }
 
    async function goTo(name, ...params) {
-      const linkId = Object.entries(links).find(([k, v]) => v = name) || [];
+      const linkId = Object.entries(links).find(([k, v]) => v == name) || [];
       setActiveNav(linkId[0]);
 
       main.innerHTML = '';
